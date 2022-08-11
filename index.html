@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css" />
+    <script
+      src="https://kit.fontawesome.com/a8c97d8f99.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+
+   <script defer src="/index.js"></script>
+
+  </head>
+
+  <body>
+    <div class="main_div">
+      <div class="music_container">
+        <div id="song_list">
+          <h3 id="menu">playlist</h3>
+
+          <ul id="items">
+            <li onclick="playnext()" title="song1" class="hi"></li>
+            <li title="song2" class="hi"></li>
+            <li title="song3" class="hi"></li>
+            <li title="song4" class="hi"></li>
+          </ul>
+        </div>
+        <h2 id="title">now playing</h2>
+        <h3 id="artist">dj parwez</h3>
+        <div class="img_container">
+          <img src="/image/img1.jpg" alt="" />
+        </div>
+
+        <audio  src="/mus/parwez1.mp3"></audio>
+
+
+ <div class="progress_container" id="progress_container">
+   <div class="progress_durationmeter">
+     <div id="currenttime">00:00</div>
+     <div id="duration">00:00</div>
+   </div>
+
+   <div class="progress_div" id="progress_div">
+     <div class="progress" id="progress">
+
+
+     </div>
+   </div>
+
+<div class="vol">
+  
+</div>
+
+
+
+
+        <!-- controls -->
+
+       
+
+
+
+
+        <div class="music_controls">
+
+
+ <i style="color: rgb(125, 222, 13)" id="repeat-plist" class="'material-icons" title="playlist looped"></i>
+
+
+                   <i
+            style="color: rgb(125, 222, 13)"
+            class="fa-solid fa-backward"
+            id="prev"
+            title="Previous"
+          ></i>
+          <i
+            style="color: rgb(235, 17, 192)"
+            class="fa-solid fa-play main_button"
+            id="play"
+            title="Play"
+          ></i>
+
+          <i
+            style="color: rgb(255, 7, 189)"
+            class="fa-solid fa-forward"
+            id="next"
+            title="Next"
+          ></i>
+        </div>
+
+       
+
+      </div>
+    </div>
+
+    <!-- <script src="/index.js"></script> -->
+  </body>
+</html>

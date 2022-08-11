@@ -1,0 +1,295 @@
+*,
+*::before,
+* ::after {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.main_div {
+  width: 100%;
+  height: 100%px;
+  background: linear-gradient(rgb(218, 0, 36)  0%, rgb(255, 0, 238) 45%);
+  display: grid;
+  place-items: center;
+}
+.music_container {
+  width: 100%;
+  height: 700px;
+
+  border-radius: 2rem;
+  box-shadow: 0 1.2rem 3rem 0.5rem black;
+  padding: 3rem;
+  text-align: center;
+  /* background-color: black; */
+}
+
+.music_container #title {
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+
+  font-weight: 100;
+  color: rgb(176, 21, 155);
+  text-shadow: 0 0.2rem 0.5rem rgb(16, 15, 15);
+}
+
+.music_container #artist {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: rgb(228, 32, 215);
+}
+
+.img_container {
+  height: 25rem;
+  width: 25rem;
+  margin: auto;
+}
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 60%;
+
+  box-shadow: 0 0.2rem 0.1rem rgb(16, 1, 1);
+}
+
+.music_controls #prev {
+  color: black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0.2rem 0.1rem rgb(16, 1, 1));
+}
+.music_controls {
+  width: 20rem;
+  height: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+  box-sizing: border-box;
+}
+.music_controls i {
+  font-size: 28px;
+
+  user-select: none;
+  background: rgb(255, 255, 255);
+  background-clip: text;
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.music_controls .music_button {
+  width: 5rem;
+
+  height: 5rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: rgb(15, 18, 18);
+  font-size: 1.4rem;
+}
+
+.music_controls #play {
+  color: black;
+  cursor: pointer;
+
+  font-size: 1.2rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.music_controls #next {
+  justify-content: center;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0.2rem 0.1rem rgb(16, 1, 1));
+}
+
+.music_controls .fa:hover {
+  color: rgb(255, 0, 217);
+}
+.music_controls .fa-play:hover {
+  background-color: rgb(117, 187, 244);
+  color: black;
+}
+
+.anime {
+  animation: rotateplayer 3s linear infinite;
+}
+
+@keyframes rotateplayer {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.music_controls i:hover {
+  background-color: rgb(132, 76, 127);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+/* progress container */
+
+.progress_container {
+  height: auto;
+  background-color: rgb(152, 0, 142);
+  width: 100%;
+
+  margin-top: 20px;
+}
+.progress_div {
+  width: 100%;
+  background-color: rgba(0, 160, 37, 0.63);
+
+  height: 3px;
+
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: all 1s linear;
+  box-shadow: 0 0.1rem 0.2rem rgb(119, 182, 197),
+    0 -0.1rem 0.2rem rgb(130, 185, 193);
+}
+
+.class {
+  position: absolute;
+  width: 100%;
+  height: 0.1rem;
+  background-color: brown;
+  left: 0;
+  top: 0;
+}
+#song_list {
+  scroll-behavior: smooth;
+
+  width: 13rem;
+  font-weight: 10;
+  height: 300px;
+  font-size: 0.5rem;
+  position: absolute;
+border-radius: 10px;
+ box-shadow: 0 1.2rem 3rem 0.5rem black;
+
+  background: linear-gradient(red 0%, rgb(108, 115, 214) 80%);
+  margin-top: 20px;
+}
+
+
+ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  font-weight: 100;
+  word-spacing: 20px;
+  margin-top: 10px;
+
+  text-shadow: 0 0.2rem 0.5rem rgb(16, 15, 15);
+}
+
+li {
+  margin-top: 10px;
+}
+li:hover {
+  color: aquamarine;
+}
+
+#menu {
+  color: rgb(108, 12, 225);
+  background-color: rgb(200, 39, 152);
+  padding: 2px 2px;
+  width: 50px;
+  border-radius: 100px;
+
+  font-size: 1.5rem;
+}
+#menu:hover {
+  background-color: rgb(34, 0, 255);
+  color: rgb(0, 0, 0);
+}
+
+/* progress bar */
+
+.bar {
+  position: relative;
+  height: 2px;
+  width: 43%;
+  margin: 0px 15px 0px 10px;
+  background: rgb(252, 252, 252);
+}
+.bar2 {
+  position: absolute;
+  background: rgb(201, 211, 211);
+  width: 20%;
+}
+
+/* progress_|bar */
+
+.progress_container {
+  height: auto;
+  padding: 1rem;
+  border-radius: 50px;
+  width: 60%;
+  position: absolute;
+top: 380px;
+  left: 250px;
+  margin-top: 1rem;
+  background: linear-gradient(rgb(243, 7, 172) 0%, rgb(255, 0, 234) 30%, red);
+  box-shadow: 0 1.2rem 3rem 0.5rem black;
+}
+
+.progress_div {
+  width: 100%;
+
+  height: 0.3rem;
+
+  transition: width 0.1s;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+
+  border-radius: 4rem;
+  margin-top: 0.5rem;
+
+  box-shadow: 0px 1px rgb(121, 17, 249), 0px -2px rgb(55, 17, 205),
+    -1px 2px pink, -1px -2px pink;
+}
+
+.progress {
+  width: 0.1rem;
+  height: 100%;
+
+  left: 0;
+  top: 0;
+
+  background-color: rgb(0, 138, 212);
+
+  transition: all 1s linear;
+
+  cursor: pointer;
+
+  border-radius: 4rem;
+
+  box-shadow: 0px 1px pink, 0px -2px pink, -1px 2px pink, -1px -2px pink;
+}
+
+.progress_durationmeter {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+}
